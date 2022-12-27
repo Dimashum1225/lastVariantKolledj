@@ -1,0 +1,464 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    border: 2px solid red;
+
+}
+body{
+    font-family: 'Oswald', sans-serif;
+}
+header{
+    background-color:  #743939;
+    min-height: 100vh ;
+}
+.header-defiz-top{
+display: flex;
+justify-content: space-between;
+padding-top: 48px;
+min-height: 60px;
+align-items: center;
+}
+
+nav ul{
+    display:flex;
+    min-width: 443px;
+    justify-content: space-between;
+   
+   
+}
+nav ul li {
+    list-style: none;
+}
+
+/* красим ссылку*/
+nav ul li a{
+color: #CDCDCD;
+padding-right: 40px;
+}
+nav ul li a:hover{/*при наведении мышки на ссылку красится в определенный цвет*/
+    border-bottom: 2px solid rgb(27, 29, 139);
+    color:blue;
+}
+.header-info{/* картинкa*//**/
+    background-image: url(./img/start-screen-puppy.png);
+min-height: 80vh;/**/
+
+background-repeat: no-repeat;/*Все картинки по умолчанию дублируются на весь жкран это свойство оставляет только одну копию картинки*/
+background-position: bottom right;
+background-size: contain;
+}
+.header-info h1{
+    font-style: normal;
+font-weight: 400;
+font-size: 44px;
+line-height: 130%;
+/* or 57px */
+/* color-light-xl */
+color: #FFFFFF;
+max-width: 330px;
+
+padding-top: 235px;
+}
+.header-info p{
+    font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 160%;
+/* or 24px */
+
+/* color-dark-s */
+
+color: #CDCDCD;
+ max-width:460px ;
+
+ padding-top: 42px;
+}
+.header-info button {
+    font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+
+color: #292929;
+background-color: #F1CDB3;;
+border-color:  #F1CDB3;
+
+padding: 15px 45px;/*расстояние между текстом и краем кнопки*/
+margin-top: 48px;/*так как padding уже есть использую margin*/
+
+border-radius: 100px;/*закругление*/
+}
+.about-content{
+    display: flex;/*выравнивание*/
+    justify-content: space-between;
+}
+.about-text,.about-img{
+    width: 50%;/*ширина*/
+    padding-top: 80px;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.about-text h2{
+    font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+
+color: #545454;
+}
+.about-text p{
+    font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 160%;
+color: #4C4C4C;
+padding-top: 25px;
+}
+.slyder{
+    display: grid;
+    grid-template-columns: repeat(3,270px);
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #FAFAFA;
+}
+.slyder h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #545454; 
+    padding-top: 30px;
+}
+.slyder button{
+
+    font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+color: #292929;
+padding:   15px 45px;
+margin-top: 45px;
+border-radius: 100px;
+border-color:  #F1CDB3;
+border-width: 3px;
+
+
+}
+.pets h2{
+    text-align: center;
+
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+color: #545454;
+padding-top: 80px;
+}
+.niz button{
+    
+    margin: 0 auto;
+    display: block;
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+color: #292929;
+background: #F1CDB3;
+border-radius: 100px;
+border-color:  #F1CDB3;
+border-width: 3px;
+margin-top: 75px;
+padding:   15px 45px;
+margin-bottom: 100px;
+
+
+}
+
+.list {   
+   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   padding-bottom: 100px;
+    
+}
+.Help h2{
+ 
+        text-align: center;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    color: #545454;
+    padding-top: 80px;
+    
+}
+.list__item {
+    width: 20%;
+    align-self: center;
+}
+
+.list__item img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+.list__item h2{
+   padding-top: 30px;
+}
+.Heading h2{
+    margin: 0 auto ;
+    max-width: 250px;
+}
+.Donates h2{
+    
+        text-align: center;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    color: #545454;
+    padding-top: 80px;
+}
+.Donates{
+    background: #F6F6F6;
+}
+.donates-content{
+    display: flex;/*выравнивание*/
+    justify-content: space-between;
+}
+.donates-text, .donates-img{
+    width: 50%;/*ширина*/
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+padding-left: 30px;
+
+}
+.donates-img{
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+color: #545454;
+padding-top: 80px; 
+
+}
+.donates-text h2{
+   padding-top: 80px; 
+
+    width: 300px;
+}
+.donates-text h3{
+    padding-top: 30px;
+    padding-bottom: 20px;
+     width: 307px;
+     font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 110%;
+color: #545454;
+ }
+ .credit-card{
+  width: 350px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    
+    color: #545454;
+
+    background-color: #F1CDB3;
+ padding: 10px 15px;
+border-radius: 9px;
+
+ }
+ .donates-content p{
+    width: 380px;
+padding-top: 20px;
+    font-family: 'Arial';
+font-style: italic;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+
+color: #B2B2B2;
+ }
+ .footer-content{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,270px);
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    background: #5B2323;
+    height: 350;
+ }
+ .footer-contacts{
+    padding:56px 191px 64px 40px;
+  padding-top: 56px;
+ }
+.footer-contacts h2{
+    font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+color: #FFFFFF;
+}
+.footer-contacts h3{
+padding-top: 45px;
+}
+.footer-content h2{
+    font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+color: #FFFFFF;
+
+}
+.footer-content h3{
+    left: calc(50% - 191px/2 + 16.5px);
+top: 135px;
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+color: #F1CDB3;
+padding-top: 35px;
+}
+.footer-puppy{
+    padding: 40px 40px 0px 191px;
+ 
+}
+@media screen and (max-width: 962px) {
+   .footer-content{
+  
+    flex-direction: column;
+    margin:  0 auto;
+
+   }
+   .footer-contacts{
+    padding-left: 25%;
+   }
+   
+   
+}
+@media screen and (max-width: 862px) {
+    .slyder {
+        flex-direction: column;
+        margin:  0 auto;
+    }
+    .list__item {
+        width: 25%;
+        align-self: center;
+    }
+}
+@media screen and (max-width: 764px) {
+  .donates-content{
+    
+    flex-direction: column;
+    margin:  0 auto;
+  }   
+.donates-img  img {
+    padding-left:25%;
+}
+.donates-text{
+padding-left: 25%;
+padding-right: 25%;
+}
+}
+@media screen and (max-width: 700px) {
+    .list__item {
+        width: 33.3%;
+        align-self: center;
+    }
+}
+@media screen and (max-width: 630px) {
+    nav ul {
+        min-width: 343px;
+    }
+    .about-content{
+        display:flex;
+        justify-content: space-around;
+    align-items: center;
+
+    }
+    .donates-img img{
+        padding-left:10%;
+        padding-bottom: 50px;
+    }
+
+}
+@media screen and (max-width: 580px) {
+    .donates-img img{
+        width: 450px;
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 530px) {
+    nav ul {
+        min-width: 265px;
+    }
+    nav ul li a {
+        font-size: 12px;
+    }
+    .about-content{
+        
+        flex-direction: column;
+        align-items: center;
+    }
+    .list__item {
+        width: 50%;
+        align-self: center;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    nav ul, .header-defiz-top {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-defiz-top, button{
+        display: block;
+        margin: 0 auto;
+    }
+    .list__item {
+        width: 100%;
+        align-self: center;
+    }
+    .donates-img img {
+        width: 300px;  
+    
+    }
+    .donates-text {
+        padding-left: 10px;
+    }
+    .donates-img  h4 a img-2{
+      width: 50px;
+    }
+    .footer-puppy{
+    padding-left: 8px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .about-img img{
+   width: 250px;
+    }
+}
+@media screen and (max-width: 250px) {
+    .about-img img{
+   width: 150px;
+    }
+}
